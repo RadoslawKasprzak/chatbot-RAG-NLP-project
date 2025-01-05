@@ -1,15 +1,2 @@
 .env
-venv/
-
-# System files
-.DS_Store
-Thumbs.db
-
-# Python files
-*.pyc
 __pycache__/
-
-# Logs and temp files
-logs/
-*.log
-*.tmp

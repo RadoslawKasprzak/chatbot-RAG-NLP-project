@@ -1,0 +1,18 @@
+[
+    ("https://www.elka.pw.edu.pl/Przydatne-informacje/Materialy-dla-Mediow","Materiały dla Mediów"),
+    ("https://www.elka.pw.edu.pl/Przydatne-informacje/Materialy-o-Wydziale","Materiały o Wydziale"),
+    ("https://www.elka.pw.edu.pl/Przydatne-informacje/Wynajem-sal","Wynajem sal"),
+    ("https://www.elka.pw.edu.pl/Przydatne-informacje/Poczta-elektroniczna","Poczta elektroniczna"),
+    ("https://www.elka.pw.edu.pl/Przydatne-informacje/Telefony-alarmowe","Telefony alarmowe"),
+    ("https://www.elka.pw.edu.pl/Przydatne-informacje/Zasady-bezpieczenstwa","Zasady bezpieczeństwa"),
+    ("https://www.elka.pw.edu.pl/Przydatne-informacje/Baza-Wiedzy-PW","Baza Wiedzy PW"),
+    ("https://www.elka.pw.edu.pl/Przydatne-informacje/Biblioteka-Glowna-i-Oficyna-Wydawnicza-PW","Biblioteka Główna i Oficyna Wydawnicza PW"),
+    ("https://www.elka.pw.edu.pl/content/view/sitemap/2","Mapa serwisu WEITI"),
+    ("https://www.elka.pw.edu.pl/Wydzial/Stale-Komisje/Komisje-Rady-Wydzialu","Komisje Rady Wydziału"),
+    ("https://www.elka.pw.edu.pl/Wydzial/Stale-Komisje/Wydzialowa-Komisja-Wyborcza","Wydziałowa Komisja Wyborcza"),
+    ("https://www.elka.pw.edu.pl/Wydzial/Wspolpraca","Współpraca"),
+    ("https://www.elka.pw.edu.pl/Wydzial/Raporty-samooceny-kierunkow-studiow","Raporty samooceny kierunków studiów"),
+    ("https://www.elka.pw.edu.pl/Wydzial/Pelnomocnicy-i-inne-funkcje","Pełnomocnicy i inne funkcje"),
+    ("https://www.elka.pw.edu.pl/Wydzial/Akty-prawne-Dziekana-i-dokumenty-RW/Akty-prawne-Dziekana","Akty prawne Dziekana"),
+    ("https://www.elka.pw.edu.pl/Wydzial/Akty-prawne-Dziekana-i-dokumenty-RW/Uchwaly-Rady-Wydzialu","Uchwały Rady Wydziału"),
+]
