@@ -12,6 +12,6 @@ class Chunker:
         chunks = []
         for url, content in data:
             chunk_text = f"{url}\n{content}"
-            # Here you can optionally split if chunk_text exceeds max_chunk_size
+            # Here we can optionally split if chunk_text exceeds max_chunk_size
             chunks.append(chunk_text)
         return chunks

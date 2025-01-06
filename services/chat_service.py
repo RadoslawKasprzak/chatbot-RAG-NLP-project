@@ -5,9 +5,21 @@ class ChatService:
     """
     A class that handles queries to OpenAI ChatGPT (model gpt-3.5-turbo or later).
     """
-    def __init__(self, model_name: str = "gpt-3.5-turbo"):
+    def __init__(self, 
+                model_name: str = "gpt-3.5-turbo",
+                system_prompt_file: str = "prompts/system_prompt.txt",
+                assistant_prompt_file: str = "prompts/assistant_prompt.txt",
+        ):
         self.model_name = model_name
         openai.api_key = os.getenv("OPENAI_API_KEY")
+
+        # Wczytaj plik system_prompt.txt
+        with open(system_prompt_file, "r", encoding="utf-8") as f:
+            self.system_prompt = f.read().strip()
+
+        # Wczytaj plik assistant_prompt.txt
+        with open(assistant_prompt_file, "r", encoding="utf-8") as f:
+            self.assistant_prompt = f.read().strip()
 
     def get_chat_response(self, conversation_context, user_message):
         """
@@ -16,19 +28,17 @@ class ChatService:
         """
         system_message = {
             "role": "system",
-            "content": (
-                "Jesteś asystentem studenta - chatbotem, który pomaga studentom elki w znajdowaniu pomocny informacji ze strony wydziałowej. "
-                "Wykorzystaj kontekst podany w system_prompt do odpowiedzi."
-            )
+            "content": self.system_prompt
         }
+
+        assistant_text = self.assistant_prompt.format(
+            conversation_context=conversation_context
+        )
 
         # Możemy włączyć kontekst w 'system_prompt' lub osobnym 'assistant' message
         system_context = {
             "role": "assistant",
-            "content": (
-                f"Oto kontekst, który powinieneś wykorzystać:\n{conversation_context}\n"
-                "Zasady: Odpowiadaj w oparciu o powyższe informacje. Masz dostęp tylko do tych informacji. Jeśli nie jesteś pewny odpowiedzi lub nie masz informacji na jakich możesz bazować to odpowiadaj: Nie znam odpowiedzi na to pytanie, odwiedź stronę https://www.elka.pw.edu.pl/ "
-            )
+            "content": assistant_text
         }
 
         user_message = {

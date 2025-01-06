@@ -75,8 +75,8 @@ def main():
                 # Build information about which chunks were selected
                 chunks_log = []
                 for idx, (chunk_text, similarity) in enumerate(top_chunks):
-                    # shorten chunk_text to first ~70 characters to not fill the log
-                    short_chunk = (chunk_text[:70] + '...') if len(chunk_text) > 70 else chunk_text
+                    # shorten chunk_text to first ~500 characters to not fill the log
+                    short_chunk = (chunk_text[:500] + '...') if len(chunk_text) > 500 else chunk_text
                     chunks_log.append(f"#{idx+1} similarity={similarity:.3f} -> '{short_chunk}'")
                 
                 # Log entry
