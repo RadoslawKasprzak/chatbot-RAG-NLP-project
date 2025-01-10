@@ -6,7 +6,7 @@ class ChatService:
     A class that handles queries to OpenAI ChatGPT (model gpt-3.5-turbo or later).
     """
     def __init__(self, 
-                model_name: str = "gpt-3.5-turbo",
+                model_name: str = "gpt-4o",
                 system_prompt_file: str = "prompts/system_prompt.txt",
                 assistant_prompt_file: str = "prompts/assistant_prompt.txt",
         ):
